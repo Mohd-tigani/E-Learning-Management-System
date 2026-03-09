@@ -101,6 +101,9 @@ The PostgreSQL database (`inventory`) contains the following tables:
 - Queues quiz and assignment submissions when offline
 - Automatically flushes pending submissions via Socket.IO when connectivity is restored
 
+**Testing Offline Mode:**
+To test offline functionality, open Chrome DevTools (`F12`), go to the **Application** tab, and tick the **Offline** checkbox under the Service Workers section. You can also inspect cached assets and IndexedDB stores from the same tab.
+
 ## Prerequisites
 
 - **Node.js** v22+
