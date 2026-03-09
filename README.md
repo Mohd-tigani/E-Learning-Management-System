@@ -115,6 +115,10 @@ The PostgreSQL database (`inventory`) contains the following tables:
    ```bash
    pg_restore -U postgres -d postgres --create lms_database.sql
    ```
+   Alternatively, you can use **pgAdmin 4** (included with the PostgreSQL installer) to restore the database via the GUI:
+   - Open pgAdmin 4 and connect to your server
+   - Right-click **Databases** → **Create** → **Database**, name it `inventory`
+   - Right-click the `inventory` database → **Restore** → select `lms_database.sql` and click **Restore**
 
 ### 2. Server Setup
 
