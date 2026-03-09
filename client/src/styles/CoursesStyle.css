@@ -1,0 +1,43 @@
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .cell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #4a90e2;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+
+    text-decoration: none;
+
+  }
+  
+  .cell:hover {
+    background-color: #367ad6;
+  }
+  
+
+/* ////////////////////////////////////
+Media queries (non mobile view)
+/////////////////////////////////// */
+
+@media screen and (min-width: 750px) {
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, .25fr));
+    gap: 15px;
+    padding: 10px;
+  }
+  }

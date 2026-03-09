@@ -1,0 +1,31 @@
+.assignment-list
+{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.assignment-list > .assignment-link
+{
+
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+}
+
+.assignment-list > .assignment-link > p
+{
+    
+    margin-bottom: 10px;
+}
+
+.assignment-list > .assignment-link:hover {
+    background-color: #367ad6;
+    cursor: pointer;
+}
+

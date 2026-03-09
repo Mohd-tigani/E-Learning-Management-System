@@ -1,0 +1,117 @@
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.quiz-cell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 15px;
+
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+
+    text-decoration: none;
+}
+
+.quiz-cell:hover {
+    background-color: #367ad6;
+}
+
+/* ////////////////////////////////////
+Quiz questions design
+/////////////////////////////////// */
+
+.question-container {
+  padding: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.question-container h2 {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.question-item {
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.question-item p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.option-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.option-list li {
+  padding: 5px 0;
+  margin-left: 10px;
+}
+
+.quiz-button
+{
+  background-color: #4a90e2;
+  color: white;
+  align-self: center;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+  padding: 10px;
+}
+
+.timer {
+  position: sticky;
+  top: 0;
+  background-color: #fff8dc;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 999;
+  border-bottom: 1px solid #ccc;
+}
+
+
+
+input[type=radio]
+{
+  margin-right: 7px;
+}
+
+
+
+/* ////////////////////////////////////
+Media queries (non mobile view)
+/////////////////////////////////// */
+
+@media screen and (min-width: 750px) {
+
+    .quiz-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, .25fr));
+        gap: 15px;
+        padding: 10px;
+    }
+
+}

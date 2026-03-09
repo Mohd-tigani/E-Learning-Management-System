@@ -1,0 +1,88 @@
+/* ////////////////////////////////////
+heading design
+/////////////////////////////////// */
+
+.heading
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.heading > img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.heading > .title
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading > .title > button
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.heading h1
+{
+    text-align: center;
+}
+
+
+.heading p
+{
+    text-align: left;
+}
+/* ////////////////////////////////////
+list design (below heading)
+/////////////////////////////////// */
+.content
+{
+    width: 50%;
+}
+
+.content > ul
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    list-style: none;
+    padding-left: 20px;
+
+}
+.content > ul > li
+{
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+
+}
+
+
+.content-button {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.content-button li {
+  padding: 8px 12px;
+  list-style: none;
+  border-radius: 5px;
+}
+
+.content-button:hover li {
+  background-color: #367ad6;
+  color: white;
+  cursor: pointer;
+}
+
+
